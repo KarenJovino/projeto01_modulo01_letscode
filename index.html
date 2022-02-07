@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="assets/CSS/styles.css"/>
 </head>
 <body>
+
     <header class="l-header" id="header">
-        <nav class="nav bd-container"><a href="#" class="nav__logo">
-            Karen Jovino</a></nav>
-        <div class="nav__menu" id="nav menu">
+        <nav class="nav bd-container"> <a href="#" class="nav__logo">
+            Karen Jovino</a>
+
+        <div class="nav__menu" id="nav-menu">
+            
             <ul class="nav__list">
                 <li class="nav__item"> 
                     <a href="#home" class="nav__link">
@@ -50,7 +53,6 @@
                            Skills
                         </i>
                     </a>
-
                 </li>
 
                 <li class="nav__item"> 
@@ -82,6 +84,14 @@
 
             </ul>
         </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class=
+            "bx bx-grid-alt">
+            </i>
+        </div>
+
+    </nav>
      </header>
 
      <main class="l-main bd-container"> 
@@ -95,15 +105,14 @@
                     <div class="home__container section bd-grid">
 
                         <div class="home__logo bd-grid">
-                            <img src="assets/image/profile.jpg" 
+                            <div class="home__data bd-grid">
+                            <img src="assets/image/profile.teste03.jpg" 
                             alt="Karen Jovino profile photo" 
-                            width="400px"
-                            class="home__img"
-                            >
+                            class="home__img">
                             <h1 class="home__title">
                                 Karen Jovino
                             </h1>
-                            <h3 class="home__subtitulo">
+                            <h3 class="home__will">
                                 Full Stack Developer Student
                             </h3>
                         </div>
@@ -117,7 +126,10 @@
                                 
                              <span class=" home__information">
                                 <i class="bx bx-envelope home__icon">
-                                       <a href="mailto: karen.teodosio@gmail.com">
+                                       <a href="mailto: karen.teodosio@gmail.com"
+                                        target="blank"
+                                        class="information__link"
+                                       >
                                         karen.teodosio@gmail.com
                                        </a> 
                                 </i>
@@ -125,8 +137,10 @@
 
                              <span class=" home__information">
                                 <i class="bx bx-phone home__icon">
-                                    <a href="tel:+5583986945372">
-                                         +55 (83)986945372
+                                    <a href="tel:+5583986945372"
+                                    target="blank"
+                                    class="information__link">
+                                         +55 (83) 986945372
                                      </a> 
                                 </i>
                              </span>
@@ -139,10 +153,68 @@
                 </section>
 
                 <section class="social" id="social">
+                    <h2 class="section-title">Social</h2>
+
+                    <div class="social__container bd-grid">
+
+                        <a href="https://www.linkedin.com/in/karen-jovino-39800a17a/"
+                           target="_blank"
+                           class="social__link"
+                        >
+                        <i class="bx bxl-linkedin-square social__icon">
+                            @karenjovino
+                        </i>
+
+                        <a href="https://github.com/KarenJovino"
+                        target="_blank"
+                        class="social__link"
+                     >
+                
+                     <i class="bx bxl-github social__icon">
+                         @karenjovino
+                     </i>
+                        </a>
+                    </div>
 
                 </section>
 
+                <section class=" profile section" id="profile">
+                    <h2 class=" section-title">
+                        Profile
+                    </h2>
+                    
+                    <p class="profile__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit delectus expedita dolorum voluptas quas atque a necessitatibus. Itaque, dicta possimus adipisci tempora tenetur nihil, unde nobis perferendis repellendus sit ut?
+                    </p>
+                </section>
+
                 <section class=" education" id="education">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="education__container bd-grid">
+
+                        <div class="education__content">
+
+                            <div class="education__time">
+
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title"> 
+                                    Letras - Língua Portuguesa
+                                </h3>
+
+                                <span class="education__studies">UFCG</span>
+                                <span class="education__year">2014-2018</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </section>
 
@@ -150,7 +222,7 @@
 
                 </section>
 
-                <section>
+                <section class=" languages" id="languages">
                     
                 </section>
 
