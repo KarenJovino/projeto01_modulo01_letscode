@@ -111,6 +111,7 @@
         bottom: 0;
         left: 0;
         z-index: var(--z-fixed);
+        background-color: var(--body-color);
         box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
         transition: 0.3s;
       }
@@ -122,7 +123,11 @@
         align-items: center;
       }
 
-      .nav__logo,
+      .nav__logo {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+      }
+
       .nav__toggle {
         font-size: 1.2rem;
         cursor: pointer;
@@ -164,8 +169,7 @@
           z-index: var(--z-fixed);
           transition: 0.3s;
         }
-        
-      }
+        }
 
       .home{
         position: relative;
@@ -293,7 +297,7 @@
       }
 
       .education__year {
-        font-size: var(--smaller-font-size);
+        font-size: var(--small-font-size);
       }
 
       .skills__content {
@@ -323,6 +327,22 @@
       margin-right: 0.75rem;
     }
 
+    @media screen and (min-width: 968px) {
+      body {
+        margin: 3rem 0;
+      }
+
+      .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .l-header,
+      .scrolltop {
+        display: none;
+
+      }
+
     .resume {
       display: grid;
       grid-template-columns: 0.5fr 1fr;
@@ -343,3 +363,63 @@
     .profile__description {
       text-align: justify;
     }
+
+    .certificate__title {
+      font-size: var(--h3-font-size);
+      margin-bottom: var(--mb-1);
+    }
+
+    .certificate__description {
+      text-align: justify;
+      text-indent: 1.5rem;
+    }
+
+  .scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: var(--container-color-alt);
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: 0.4s;
+    visibility: hidden;
+  }
+
+  .scrolltop__icon {
+    font-size: 20px;
+    color: var(--text-color);
+  }
+
+  .interests__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3.5rem;
+  } 
+}
+
+.interests__container {
+    grid-template-columns: repeat(4,1fr);
+    margin-top: var(--mb-2);
+    margin-right: 1rem;
+}
+
+.interests__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interests__icon {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.25rem;
+}
+
+.interests__name {
+  text-align: center;
+}
+
+ 
